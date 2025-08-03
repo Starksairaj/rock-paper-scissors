@@ -1,33 +1,60 @@
 body {
-  font-family: Arial, sans-serif;
-  background: linear-gradient(to right, #ece9e6, #ffffff);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
   text-align: center;
-  padding: 50px;
-}
-
-.game-container {
-  background-color: #f4f4f4;
-  padding: 30px;
-  border-radius: 15px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.1);
   max-width: 400px;
-  margin: auto;
 }
 
-.choices button {
-  font-size: 18px;
+h1 {
+  font-size: 2rem;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+button {
+  font-size: 16px;
   padding: 10px 20px;
-  margin: 10px;
-  border-radius: 8px;
+  margin: 10px 10px;
   border: none;
+  border-radius: 12px;
   cursor: pointer;
-  transition: 0.3s;
+  transition: all 0.3s ease;
+  background-color: #f0f0f0;
 }
 
-.choices button:hover {
-  background-color: #ddd;
+button:hover {
+  background-color: #4f46e5;
+  color: white;
+  transform: scale(1.05);
 }
 
-.result {
+p {
+  margin: 12px 0;
+  font-size: 1.1rem;
+  color: #444;
+}
+
+#result {
   margin-top: 20px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #28a745;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
 }
