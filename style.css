@@ -1,64 +1,73 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
 body {
-    font-family: 'Poppins', sans-serif;
-    background: linear-gradient(to right, #ece9e6, #ffffff);
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+  background: linear-gradient(to right, #f9f9f9, #f1f1f1);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .container {
-    background: rgba(255, 255, 255, 0.8);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(10px);
-    border-radius: 20px;
-    padding: 40px;
-    width: 320px;
-    text-align: center;
-    transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+  transition: all 0.3s ease-in-out;
 }
 
 h1 {
-    font-size: 28px;
-    margin-bottom: 30px;
+  font-size: 1.8rem;
+  margin-bottom: 25px;
+  color: #333;
 }
 
-button {
-    background-color: #f0f0f0;
-    border: none;
-    padding: 12px 20px;
-    border-radius: 12px;
-    margin: 10px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
+.buttons button {
+  background: #ffffff;
+  border: none;
+  border-radius: 12px;
+  margin: 10px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: all 0.2s ease-in-out;
 }
 
-button:hover {
-    background-color: #dcdcdc;
-    transform: scale(1.05);
+.buttons button:hover {
+  transform: translateY(-2px);
+  background: #e6e6e6;
 }
 
-.result {
-    font-weight: 600;
-    font-size: 20px;
-    margin-top: 20px;
-    color: #333;
-    animation: fadeIn 0.5s ease;
+.buttons button:active {
+  transform: scale(0.96);
 }
 
-.choice {
-    margin-top: 15px;
-    color: #555;
+.results {
+  margin-top: 30px;
 }
 
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(10px); }
-    to { opacity: 1; transform: translateY(0); }
+#player-choice, #computer-choice {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+#result-text {
+  margin-top: 10px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #ff3e3e;
 }
