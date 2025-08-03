@@ -8,12 +8,16 @@
 }
 
 body {
-  background: linear-gradient(to right, #f9f9f9, #f1f1f1);
+  background: url("bg.jpg") no-repeat center center fixed;
+  background-size: cover;
   height: 100vh;
+  margin: 0;
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: 'Poppins', sans-serif;
 }
+
 
 .container {
   background: rgba(255, 255, 255, 0.7);
@@ -71,3 +75,4 @@ h1 {
   font-weight: bold;
   color: #ff3e3e;
 }
+
