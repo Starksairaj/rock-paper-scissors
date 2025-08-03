@@ -1,60 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #ece9e6, #ffffff);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .container {
-  background: white;
-  padding: 40px;
-  border-radius: 20px;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  max-width: 400px;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 40px;
+    width: 320px;
+    text-align: center;
+    transition: all 0.3s ease;
 }
 
 h1 {
-  font-size: 2rem;
-  margin-bottom: 25px;
-  color: #333;
+    font-size: 28px;
+    margin-bottom: 30px;
 }
 
 button {
-  font-size: 16px;
-  padding: 10px 20px;
-  margin: 10px 10px;
-  border: none;
-  border-radius: 12px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  background-color: #f0f0f0;
+    background-color: #f0f0f0;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 12px;
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
 }
 
 button:hover {
-  background-color: #4f46e5;
-  color: white;
-  transform: scale(1.05);
+    background-color: #dcdcdc;
+    transform: scale(1.05);
 }
 
-p {
-  margin: 12px 0;
-  font-size: 1.1rem;
-  color: #444;
+.result {
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 20px;
+    color: #333;
+    animation: fadeIn 0.5s ease;
 }
 
-#result {
-  margin-top: 20px;
-  font-weight: bold;
-  font-size: 1.2rem;
-  color: #28a745;
-  animation: fadeIn 0.4s ease-in-out;
+.choice {
+    margin-top: 15px;
+    color: #555;
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
 }
