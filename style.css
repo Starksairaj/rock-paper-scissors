@@ -8,14 +8,14 @@
 }
 
 body {
-  background: url("bg.jpg") no-repeat center center fixed;
+  background: url('bg.jpg') no-repeat center center fixed;
   background-size: cover;
-  height: 100vh;
   margin: 0;
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: 'Poppins', sans-serif;
 }
 
 
@@ -75,4 +75,5 @@ h1 {
   font-weight: bold;
   color: #ff3e3e;
 }
+
 
